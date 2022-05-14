@@ -12,7 +12,7 @@ public class ScorePK implements Serializable {
 
 	@ManyToOne
 	@JoinColumn(name = "movie_id")
-	private Movie Movie;
+	private Movie movie;
 	
 	@ManyToOne
 	@JoinColumn(name = "user_id")
@@ -23,11 +23,11 @@ public class ScorePK implements Serializable {
 	}
 
 	public Movie getMovie() {
-		return Movie;
+		return movie;
 	}
 
 	public void setMovie(Movie movie) {
-		Movie = movie;
+		this.movie = movie;
 	}
 
 	public User getUser() {
