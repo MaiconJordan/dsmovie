@@ -38,8 +38,8 @@ function FormCard( { movieId } : Props) {
             method: 'PUT',
             url: '/scores',
             data: {
-                email: email,
                 movieId: movieId,
+                email: email,                
                 score: score
             }
         }
